@@ -10,7 +10,7 @@ async function populate(){
     // STEP 5: Use the new URL to create a new request object
     const request= new Request(requestURL);
     // STEP 6: Make a network request with the fetch() function, which returns a Response object
-    const response = await fetch(request);
+    const response = await fetch(Request);
     
     // STEP 7: Capture the returned Response object and covert to a JSON object using json()
     const iScream= await response.json();
